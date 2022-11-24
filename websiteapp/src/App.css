@@ -1,0 +1,67 @@
+.slider {
+  width: 100%;
+  max-width: 500px;
+  height: 10vh;
+  margin: auto;
+  margin-left: 5%;
+}
+.thumbRed,
+.thumbGreen,
+.thumbBlue {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  background: #ffffff;
+  border: 5px solid #3774ff;
+  border-radius: 100%;
+  display: block;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+.thumbGreen {
+  border: 5px solid #31ff23;
+}
+.thumbRed {
+  border: 5px solid #ff3737;
+}
+.thumbRed.active,
+.thumbGreen.active,
+.thumbBlue.active {
+  background-color: grey;
+}
+.trackRed,
+.trackGreen,
+.trackBlue {
+  position: relative;
+  background: #ddd;
+}
+.trackRed.trackRed-0 {
+  background: #ff8282;
+}
+.trackGreen.trackGreen-0 {
+  background: #7dff78;
+}
+.trackBlue.trackBlue-0 {
+  background: #83a9ff;
+}
+.slider .trackRed,
+.slider .trackGreen,
+.slider .trackBlue {
+  top: 20px;
+  height: 4px;
+}
+.slider .thumbRed,
+.slider .thumbGreen,
+.slider .thumbBlue {
+  top: 12px;
+  width: 10px;
+  outline: none;
+  height: 10px;
+  line-height: 38px;
+}
+.displayBox {
+  width: 200px;
+  height: 200px;
+  margin: 50px 50px;
+  border: black solid 4px;
+  border-radius: 10px;
+}
